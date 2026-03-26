@@ -23,3 +23,5 @@ Cinnabar Lab does not collect, store, or share any personal data. All app data i
 ## About
 
 Cinnabar Lab is developed independently and is not affiliated with Nintendo, Game Freak, or The Pokémon Company.
+
+Last Updated: March 26, 2025
