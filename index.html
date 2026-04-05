@@ -15,8 +15,7 @@
             <svg class="nav-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" r="15" stroke="#E53935" stroke-width="2"/>
                 <line x1="1" y1="16" x2="31" y2="16" stroke="#E53935" stroke-width="2"/>
-                <circle cx="16" cy="16" r="5" fill="#E53935" stroke="#0f1117" stroke-width="2"/>
-                <path d="M16 1 A15 15 0 0 1 31 16" stroke="#E53935" stroke-width="0" fill="#E53935" fill-opacity="0.1"/>
+                <circle cx="16" cy="16" r="5" fill="#E53935" stroke="white" stroke-width="2"/>
             </svg>
             <span>Cinnabar Lab</span>
         </a>
@@ -29,92 +28,125 @@
 
 <!-- HERO -->
 <div class="hero">
-    <div class="hero-badge">iOS App</div>
-    <h1>Your Pokémon<br/><span>Companion App</span></h1>
-    <p>Browse, quiz, track, and build teams — everything you need, completely offline.</p>
+    <div class="hero-text">
+        <div class="hero-eyebrow">📱 Available on iOS</div>
+        <h1>Your Pokémon<br/><span>Companion App</span></h1>
+        <p class="hero-desc">Browse, quiz, track, and build teams — everything you need, completely offline.</p>
+        <div class="hero-actions">
+            <a href="https://apps.apple.com/app/cinnabar-lab/id6742574230" class="btn-appstore">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <span class="btn-text">
+                    <span class="btn-sub">Download on the</span>
+                    <span class="btn-main">App Store</span>
+                </span>
+            </a>
+        </div>
+        <p class="hero-note">Free · No ads · No tracking</p>
+    </div>
+    <div class="hero-visual">
+        <div class="phones-container">
+            <div class="phone-mockup phone-mockup-back">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-notch"></div>
+                        <img src="screenshots/home.jpg" alt="Cinnabar Lab home screen" />
+                    </div>
+                </div>
+            </div>
+            <div class="phone-mockup phone-mockup-front">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-notch"></div>
+                        <img src="screenshots/team-builder.jpg" alt="Team Builder screen" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- MAIN -->
 <main>
 
     <!-- Features -->
-    <div class="card">
-        <h2>
-            <span class="icon" style="background:rgba(229,57,53,0.12)">✦</span>
-            Features
-        </h2>
+    <section>
+        <div class="section-label">What's Inside</div>
+        <div class="section-title">Everything in one place</div>
         <div class="features-grid">
-            <div class="feature-item">
-                <div class="feature-icon">📖</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(229,57,53,0.1)">📖</div>
                 <h3>Complete Pokédex</h3>
                 <p>Browse all Pokémon with detailed stats, abilities, evolution chains, and move lists.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">🎮</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(234,179,8,0.12)">🎮</div>
                 <h3>Pokémon Quiz</h3>
                 <p>Test your knowledge with type challenges, effectiveness questions, and battle quizzes across all generations.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">✅</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(34,197,94,0.1)">✅</div>
                 <h3>Living Dex Tracker</h3>
                 <p>Track your collection progress by generation with caught/uncaught filters and export support.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">⚔️</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(239,68,68,0.1)">⚔️</div>
                 <h3>Team Builder</h3>
                 <p>Build teams with full type coverage analysis, stat distribution, and head-to-head matchups.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">🔢</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(59,130,246,0.1)">🔢</div>
                 <h3>Type Calculator</h3>
                 <p>Calculate type effectiveness and find Pokémon that match any combination of types.</p>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">📡</div>
+            <div class="feature-card">
+                <div class="feature-icon-wrap" style="background:rgba(107,114,128,0.1)">📡</div>
                 <h3>Completely Offline</h3>
-                <p>No internet required. Everything runs locally on your device.</p>
+                <p>No internet required. Everything runs locally on your device — no account, no tracking.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contact -->
-    <div class="card">
-        <h2>
-            <span class="icon" style="background:rgba(59,130,246,0.12)">✉</span>
-            Contact &amp; Support
-        </h2>
-        <p style="color:var(--muted); font-size:0.92rem; margin-bottom:16px;">
-            Have a question, found a bug, or want to share feedback? We'd love to hear from you.
-        </p>
-        <a href="mailto:cinnabarlabapp@gmail.com" class="contact-email">
-            📧 cinnabarlabapp@gmail.com
-        </a>
-    </div>
+    <section>
+        <div class="contact-card">
+            <div>
+                <h3>Have a question or found a bug?</h3>
+                <p>We'd love to hear from you — feedback, reports, or just to say hello.</p>
+            </div>
+            <a href="mailto:cinnabarlabapp@gmail.com" class="contact-email-btn">
+                ✉ cinnabarlabapp@gmail.com
+            </a>
+        </div>
+    </section>
 
     <!-- Privacy & About -->
-    <div class="card">
-        <h2>
-            <span class="icon" style="background:rgba(34,197,94,0.12)">🔒</span>
-            Privacy &amp; About
-        </h2>
-        <div class="info-row">
-            <span class="info-row-icon">🛡️</span>
-            <p><strong>Your data stays on your device.</strong> Cinnabar Lab does not collect, store, or share any personal data. All app data is stored locally.</p>
+    <section>
+        <div class="section-label">Privacy &amp; About</div>
+        <div class="info-card">
+            <div class="info-row">
+                <span class="info-row-icon">🛡️</span>
+                <p><strong>Your data stays on your device.</strong> Cinnabar Lab does not collect, store, or share any personal data. All app data is stored locally.</p>
+            </div>
+            <div class="info-row">
+                <span class="info-row-icon">⚖️</span>
+                <p>Cinnabar Lab is developed independently and is <strong>not affiliated with Nintendo, Game Freak, or The Pokémon Company</strong>. Pokémon and all related names are trademarks of their respective owners.</p>
+            </div>
+            <div class="info-row">
+                <span class="info-row-icon">🗓️</span>
+                <p>Last updated: <strong>April 2026</strong></p>
+            </div>
         </div>
-        <div class="info-row">
-            <span class="info-row-icon">⚖️</span>
-            <p>Cinnabar Lab is developed independently and is <strong>not affiliated with Nintendo, Game Freak, or The Pokémon Company</strong>. Pokémon and all related names are trademarks of their respective owners.</p>
-        </div>
-        <div class="info-row">
-            <span class="info-row-icon">🗓️</span>
-            <p>Last updated: <strong>April 2026</strong></p>
-        </div>
-    </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>Cinnabar Lab &nbsp;·&nbsp; <a href="index.html">Support</a> &nbsp;·&nbsp; <a href="roadmap.html">Roadmap</a> &nbsp;·&nbsp; <a href="mailto:cinnabarlabapp@gmail.com">Contact</a></p>
+    <p>© 2026 Cinnabar Lab</p>
+    <div class="footer-links">
+        <a href="index.html">Support</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="mailto:cinnabarlabapp@gmail.com">Contact</a>
+    </div>
 </footer>
 
 </body>

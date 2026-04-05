@@ -15,7 +15,7 @@
             <svg class="nav-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="16" cy="16" r="15" stroke="#E53935" stroke-width="2"/>
                 <line x1="1" y1="16" x2="31" y2="16" stroke="#E53935" stroke-width="2"/>
-                <circle cx="16" cy="16" r="5" fill="#E53935" stroke="#0f1117" stroke-width="2"/>
+                <circle cx="16" cy="16" r="5" fill="#E53935" stroke="white" stroke-width="2"/>
             </svg>
             <span>Cinnabar Lab</span>
         </a>
@@ -27,16 +27,16 @@
 </nav>
 
 <!-- HERO -->
-<div class="hero">
-    <div class="hero-badge">Public Roadmap</div>
-    <h1>What We're<br/><span>Building Next</span></h1>
+<div class="roadmap-hero">
+    <div class="hero-eyebrow">Public Roadmap</div>
+    <h1>What We're<br/><span style="color:var(--red)">Building Next</span></h1>
     <p>Here's a look at what's live, what's coming, and what we're thinking about for the future.</p>
 </div>
 
 <!-- MAIN -->
 <main>
 
-    <!-- v1.3 — Current -->
+    <!-- v1.3 — In Progress -->
     <div class="version-card">
         <div class="version-header">
             <span class="version-badge badge-current">v1.3 — In Progress</span>
@@ -164,7 +164,7 @@
         </div>
     </div>
 
-    <!-- Backlog -->
+    <!-- Future / Backlog -->
     <div class="version-card">
         <div class="version-header">
             <span class="version-badge badge-backlog">Future</span>
@@ -202,48 +202,52 @@
     </div>
 
     <!-- Release History -->
-    <div class="card">
-        <h2>
-            <span class="icon" style="background:rgba(34,197,94,0.12)">🕘</span>
-            Release History
-        </h2>
-        <table class="release-table">
-            <thead>
-                <tr>
-                    <th>Version</th>
-                    <th>Date</th>
-                    <th>Highlights</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>v1.3</td>
-                    <td>Apr 2026</td>
-                    <td>Team Builder Pro — type coverage grids, stat distribution, matchup analysis, Pokémon info popup</td>
-                </tr>
-                <tr>
-                    <td>v1.2</td>
-                    <td>Apr 2026</td>
-                    <td>Haptic feedback, evolution chains, progress tracking, unified filters, quiz improvements</td>
-                </tr>
-                <tr>
-                    <td>v1.1</td>
-                    <td>Mar 2026</td>
-                    <td>Sprite grids in Database, Tracker export/import, accessibility pass, architecture cleanup</td>
-                </tr>
-                <tr>
-                    <td>v1.0</td>
-                    <td>—</td>
-                    <td>Initial release</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <section>
+        <div class="section-label">History</div>
+        <div class="info-card">
+            <table class="release-table">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Date</th>
+                        <th>Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>v1.3</td>
+                        <td>Apr 2026</td>
+                        <td>Team Builder Pro — type coverage grids, stat distribution, matchup analysis, Pokémon info popup</td>
+                    </tr>
+                    <tr>
+                        <td>v1.2</td>
+                        <td>Apr 2026</td>
+                        <td>Haptic feedback, evolution chains, progress tracking, unified filters, quiz improvements</td>
+                    </tr>
+                    <tr>
+                        <td>v1.1</td>
+                        <td>Mar 2026</td>
+                        <td>Sprite grids in Database, Tracker export/import, accessibility pass, architecture cleanup</td>
+                    </tr>
+                    <tr>
+                        <td>v1.0</td>
+                        <td>—</td>
+                        <td>Initial release</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>Cinnabar Lab &nbsp;·&nbsp; <a href="index.html">Support</a> &nbsp;·&nbsp; <a href="roadmap.html">Roadmap</a> &nbsp;·&nbsp; <a href="mailto:cinnabarlabapp@gmail.com">Contact</a></p>
+    <p>© 2026 Cinnabar Lab</p>
+    <div class="footer-links">
+        <a href="index.html">Support</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="mailto:cinnabarlabapp@gmail.com">Contact</a>
+    </div>
 </footer>
 
 </body>
