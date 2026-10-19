@@ -187,68 +187,79 @@
         </div>
     </div>
 
-    <!-- v1.6 — Next Up -->
+    <!-- v1.7 — Next Up -->
     <div class="version-card">
         <div class="version-header">
-            <span class="version-badge badge-next">v1.6 — Next Up</span>
+            <span class="version-badge badge-next">v1.7 — Next Up</span>
             <div>
-                <h3>Battle Simulator</h3>
-                <p>Turn-based battles using your built team against Gym Leaders and Elite Four</p>
+                <h3>Data Integrity</h3>
+                <p>Fix gaps and inconsistencies in the bundled database so every screen shows complete, correct data</p>
             </div>
         </div>
         <div class="version-body">
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Core battle engine — turn-based loop with move selection, PP tracking, and type effectiveness</p>
+                <p>Mega info in Pokédex</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Stat calculations — Attack, Defense, Sp. Atk, Sp. Def, Speed with level scaling</p>
+                <p>Move and location info missing for alternate forms</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>258 base species have no abilities in pokemon.db</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>Pokédex flavor text never renders — pokedex_entries table is empty</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>BDSP and Let's Go have no learnsets (Moves tab is empty)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>pokemon.base_species_id holds the pre-evolution for 484 species instead of NULL</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>TM / HM / TR numbers are missing for every TM learnset row</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>Fill 52 missing item descriptions and 119 missing item sprites</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>Clean the 4 malformed held-item entries (Basculin, Minior, Zacian, Zamazenta)</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Status conditions — burn, freeze, paralysis, sleep, poison, confusion</p>
+                <p>Clean up minor data gaps found in the audit</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Pre-built opponent rosters — Gym Leaders and Elite Four for each supported game</p>
+                <p>Move hard-coded evolution labels out of Swift and into evolution_chain</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Use your Team Builder team — bring your saved team directly into a battle</p>
+                <p>Make the data pipeline reproducible from committed inputs</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>Add a data-validation script and run it before every DB bump</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-done">✓</div>
+                <p>219 Pokémon have no EV-yield rows in pokemon.db</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Battle log — scrollable turn-by-turn summary of the fight</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- v1.7 — Planned -->
-    <div class="version-card">
-        <div class="version-header">
-            <span class="version-badge badge-planned">v1.7 — Planned</span>
-            <div>
-                <h3>Quiz Upgrades</h3>
-                <p>Make the quiz system more engaging and replayable</p>
-            </div>
-        </div>
-        <div class="version-body">
-            <div class="roadmap-item">
-                <div class="roadmap-check check-pending"></div>
-                <p>Streak system with combo multiplier</p>
+                <p>Alternate-form evolution targets have no evolution_chain edges</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Timed mode — countdown timer overlay on existing quiz modes</p>
-            </div>
-            <div class="roadmap-item">
-                <div class="roadmap-check check-pending"></div>
-                <p>Personal best / high score tracking per quiz mode</p>
-            </div>
-            <div class="roadmap-item">
-                <div class="roadmap-check check-pending"></div>
-                <p>Daily Challenge — fixed seed quiz, same for all players each day</p>
+                <p>Held-item names with no items row (72 names) + duplicate pok-ball item</p>
             </div>
         </div>
     </div>
@@ -257,6 +268,157 @@
     <div class="version-card">
         <div class="version-header">
             <span class="version-badge badge-planned">v1.8 — Planned</span>
+            <div>
+                <h3>Engineering Foundation</h3>
+                <p>Tests, CI, concurrency safety, code structure, and platform/accessibility groundwork</p>
+            </div>
+        </div>
+        <div class="version-body">
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Who's That Pokémon: every option carries the correct Pokémon's image ID</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Add a unit-test target (there are zero tests)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>CI: build and test on every PR with GitHub Actions; commit a shared scheme</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Switch to Swift 6 language mode and strict concurrency</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Don't crash on database open/copy failure; make the DB upgrade atomic</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Remove force casts and debug prints in DatabaseService and view models</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Split the oversized view files and move views out of Data/</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Inject dependencies instead of global singletons</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Dynamic Type and accessibility audit</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>iPad support (and evaluate Mac)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Decide the minimum iOS version (currently 26.1)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Measure and reduce app download size (asset catalog 49 MB + DB 42 MB)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Add CLAUDE.md / CONTRIBUTING.md with build, data, and release steps</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- v1.9 — Planned -->
+    <div class="version-card">
+        <div class="version-header">
+            <span class="version-badge badge-planned">v1.9 — Planned</span>
+            <div>
+                <h3>Living Dex &amp; Team Upgrades</h3>
+                <p>Richer Living Dex tracking and deeper, persistent Team Builder teams</p>
+            </div>
+        </div>
+        <div class="version-body">
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Persist teams in the database instead of a single UserDefaults blob</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Multiple saved teams (named, per game)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Per-slot moveset, ability, item, nature, and level in Team Builder</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Shiny tracking in the Living Dex</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Track forms, gender, Alpha, and Gigantamax in the Living Dex</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Show transfer-only / HOME-only availability in the Pokédex and tracker</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Export team to Showdown format and import from Showdown paste</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Comparison mode — 2 to 3 Pokémon side by side</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>iCloud sync for Living Dex and teams</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- v2.0 — Planned -->
+    <div class="version-card">
+        <div class="version-header">
+            <span class="version-badge badge-planned">v2.0 — Planned</span>
+            <div>
+                <h3>Quiz Upgrades</h3>
+                <p>Make the quiz system more engaging and replayable</p>
+            </div>
+        </div>
+        <div class="version-body">
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Quiz: streak counter with combo multiplier</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Quiz: timed mode</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Quiz: personal best and high-score history per mode</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Quiz: Daily Challenge (same seeded quiz for everyone)</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Quiz: use the selected game's type chart and regional dex</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Custom quiz builder</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- v2.1 — Planned -->
+    <div class="version-card">
+        <div class="version-header">
+            <span class="version-badge badge-planned">v2.1 — Planned</span>
             <div>
                 <h3>Breeding &amp; Egg Moves</h3>
                 <p>Breeding tools using existing egg group data</p>
@@ -269,19 +431,56 @@
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Breeding path suggestions — shortest path to breed a target Pokémon</p>
+                <p>Breeding path suggestions (shortest chain to a target egg move)</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Egg move suggestions — show which egg moves are available per Pokémon</p>
+                <p>Egg move browser per Pokémon</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Nature and EV planner</p>
             </div>
         </div>
     </div>
 
-    <!-- v1.9 — Planned -->
+    <!-- v2.2 — Planned -->
     <div class="version-card">
         <div class="version-header">
-            <span class="version-badge badge-planned">v1.9 — Planned</span>
+            <span class="version-badge badge-planned">v2.2 — Planned</span>
+            <div>
+                <h3>Battle Simulator</h3>
+                <p>Turn-based battles using your built team against Gym Leaders and Elite Four</p>
+            </div>
+        </div>
+        <div class="version-body">
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Battle Simulator: core turn engine</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Battle Simulator: stat and damage formulas</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Battle Simulator: status conditions and volatile effects</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Battle Simulator: Gym Leader and Elite Four rosters per game</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Battle Simulator: fight with your saved team, battle log UI</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- v2.3 — Planned -->
+    <div class="version-card">
+        <div class="version-header">
+            <span class="version-badge badge-planned">v2.3 — Planned</span>
             <div>
                 <h3>Gamification &amp; Profile</h3>
                 <p>Reward long-term engagement and social sharing</p>
@@ -290,24 +489,24 @@
         <div class="version-body">
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Achievements system — "Catch 100 Pokémon", "Master Fire Types", and more</p>
+                <p>Achievements system</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Shiny tracker — separate tracking for shiny variants</p>
+                <p>Profile screen with stats</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Profile screen with stats and achievements</p>
+                <p>Share progress as an image</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Share progress as image — completion stats, team, and more</p>
+                <p>Home Screen widget and Spotlight / Siri search</p>
             </div>
         </div>
     </div>
 
-    <!-- Future / Backlog -->
+    <!-- Future -->
     <div class="version-card">
         <div class="version-header">
             <span class="version-badge badge-backlog">Future</span>
@@ -319,27 +518,35 @@
         <div class="version-body">
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>iCloud sync — Living Dex Tracker across multiple devices</p>
+                <p>Live data updates without an App Store release</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Comparison mode — compare stats side-by-side for 2–3 Pokémon</p>
+                <p>Location maps</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Live data updates — in-app data downloads so new game support doesn't require an App Store update</p>
+                <p>Custom themes and alternate app icons</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Custom quiz builder — user-defined Pokémon or type sets</p>
+                <p>Localization groundwork and multi-language Pokémon names</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Location maps — visual maps showing where Pokémon are found</p>
+                <p>Global search across Pokémon, moves, abilities, items, and locations</p>
             </div>
             <div class="roadmap-item">
                 <div class="roadmap-check check-pending"></div>
-                <p>Custom themes — accent colors or type-themed UI</p>
+                <p>Favorites and recently viewed</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Nuzlocke / playthrough mode</p>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-check check-pending"></div>
+                <p>Type Calculator: dual-type attacker and move-based input</p>
             </div>
         </div>
     </div>
